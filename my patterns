@@ -7,7 +7,7 @@ int pattern()
     scanf("%d",&rows);
     for(i=1;i<=rows;i++)
     {
-        for(space=0;space<=rows-i;space++)
+        for(space=1;space<=rows-i;space++)
         {
             printf(" ");  
         }
@@ -38,7 +38,29 @@ int main()
     scanf("%d",&rows);
     for(i=1;i<=rows;i++)
     {
-        for(space=0;space<=rows-i;space++)
+        for(space=1;space<=rows-i;space++)
+        {
+            printf(" ");  
+        }
+        for(j=1;j<=2*i-1;j++)
+        {
+    printf("*");
+    
+}
+printf("\n");
+}
+}
+
+reverse the patterns: triangle:
+#include <stdio.h>
+int main()
+{
+    int i,j,space,rows;
+    printf("enter the no of rows:");
+    scanf("%d",&rows);
+    for(i=rows;i>=1;i--)
+    {
+        for(space=1;space<=rows-i;space++)
         {
             printf(" ");  
         }
