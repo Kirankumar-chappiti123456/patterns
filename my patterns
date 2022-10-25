@@ -72,3 +72,30 @@ int main()
 printf("\n");
 }
 }
+
+
+
+pattern program:
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,var;
+    printf("enter the number: ");
+    scanf("%d",&var);
+    if(var%10==0)
+    {
+    for (i='a'; i<='e'; i++)
+    {
+        for (j='a'; j<=i; j++)
+        {
+            printf("%c", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+}
